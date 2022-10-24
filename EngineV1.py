@@ -5,7 +5,6 @@ Pick a name
 hp = 20 #you can change it easily
 bhp = 200
 dmg = 0
-maxhp = 20 #you can change it easily
 
 print('''
 Something has appeared!
@@ -61,8 +60,8 @@ for i in range(200):
   * You ate the popato chisps
   * HP increased!
   ''')
-  if hp > maxhp:
-   hp = maxhp
+  if hp > 20:
+   hp = 20
  #mercy
  if pc == 'mercy':
   pc2 = input('''
@@ -90,7 +89,7 @@ for i in range(200):
  * You earned 250 XP 300 G
  ''')
  #loss
- if hp < maxhp:
+ if hp < 20: #you can change it
   print('''
  You're dead
  
