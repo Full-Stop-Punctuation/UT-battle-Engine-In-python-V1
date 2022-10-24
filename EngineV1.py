@@ -2,9 +2,10 @@ import random
 name = input('''
 Pick a name
 ''')
-hp = 20
+hp = 20 #you can change it easily
 bhp = 200
 dmg = 0
+maxhp = 20 #you can change it easily
 
 print('''
 Something has appeared!
@@ -24,11 +25,11 @@ for i in range(200):
  
  ''')
   if pc2 == 'something':
-   dmg = random.randint(10,19)
+   dmg = random.randint(10,19) #you can change it easily
   bhp -= dmg
   print(f'''
   * {dmg} damage dealt!
-  
+  * They have {bhp} hp left!
   ''')
  #act
  elif pc == 'act':
@@ -55,13 +56,13 @@ for i in range(200):
  
  ''')
  if pc2 == 'chips':
-  hp += 5
+  hp += 5 #you can change it easily
   print('''
   * You ate the popato chisps
   * HP increased!
   ''')
-  if hp > 20:
-   hp = 20
+  if hp > maxhp:
+   hp = maxhp
  #mercy
  if pc == 'mercy':
   pc2 = input('''
@@ -75,7 +76,7 @@ for i in range(200):
   ''')
 
  #boss attack
- batk = random.randint(2,8)
+ batk = random.randint(4,10) #you can change it easily
  hp -= batk
  print(f'''
 * Something attacked!
@@ -89,7 +90,7 @@ for i in range(200):
  * You earned 250 XP 300 G
  ''')
  #loss
- if hp < 0:
+ if hp < maxhp:
   print('''
  You're dead
  
