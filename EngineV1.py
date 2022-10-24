@@ -88,7 +88,7 @@ for i in range(200):
  * YOU WON!
  * You earned 250 XP 300 G
  ''')
-#loss
+ #loss
  if hp < 0:
   print('''
  You're dead
