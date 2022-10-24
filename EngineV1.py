@@ -75,7 +75,7 @@ for i in range(200):
   ''')
 
  #boss attack
- batk = random.randint(4,10) #you can change it easily
+ batk = random.randint(4,6) #you can change it easily
  hp -= batk
  print(f'''
  * Something attacked!
@@ -89,7 +89,8 @@ for i in range(200):
  * You earned 250 XP 300 G
  ''')
  #loss
- if hp <= 0: #you can change it
+ if hp < 0:
+  hp = 0
   print('''
  You're dead
  
